@@ -40,22 +40,19 @@
         <!-- THIÊN CƠ VỀ ĐẠI ÂN XÁ KHAI SÁNG -->
         <section class="bg-gradient-to-br from-amber-950/40 via-slate-900/80 to-slate-900/80 p-6 md:p-8 rounded-2xl border border-amber-500/40 shadow-2xl space-y-6">
             <h2 class="text-2xl font-bold text-amber-300 border-b border-amber-500/30 pb-3 text-center uppercase tracking-wide">
-                ⚡ Cảnh Tỉnh Thiên Cơ & Hồng Ân Trời Bán
+                ⚡ Cảnh Tỉnh Thiên Cơ & Hồng Ân Trời Ban
             </h2>
 
-            <!-- So sánh Thời Cổ vs Kiếp Hiện Tại -->
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- Ngày xưa -->
                 <div class="bg-slate-800/60 p-5 rounded-xl border border-slate-700 space-y-2">
                     <div class="text-amber-400 font-bold text-lg border-b border-slate-700 pb-1">
-                        ⏳ Ngày Xuưa (Thuở Trước)
+                        ⏳ Ngày Xưa (Thuở Trước)
                     </div>
                     <p class="text-slate-300 text-sm leading-relaxed">
-                        Chung sinh phải trải qua **1 vạn kiếp** đầu thai lên xuống, chịu muôn vàn đắng cay, tích lũy công đức qua trăm ngàn đời mới đủ duyên để thành **Phật, Thánh, Tiên**.
+                        Chúng sinh phải trải qua **1 vạn kiếp** đầu thai lên xuống, chịu muôn vàn đắng cay, tích lũy công đức qua trăm ngàn đời mới đủ duyên để thành **Phật, Thánh, Tiên**.
                     </p>
                 </div>
 
-                <!-- Kiếp này -->
                 <div class="bg-amber-950/30 p-5 rounded-xl border border-amber-500/40 space-y-2">
                     <div class="text-amber-300 font-bold text-lg border-b border-amber-500/30 pb-1">
                         ✨ Kiếp Hiện Tại (Đại Ân Xá)
@@ -65,172 +62,132 @@
                     </p>
                 </div>
             </div>
+        </section>
 
-            <!-- Lời Cảnh Tỉnh Vô Giá -->
-            <div class="bg-red-950/30 border-l-4 border-red-500 p-4 rounded-r-xl space-y-2">
-                <h3 class="text-red-400 font-bold text-base flex items-center gap-2">
-                    <span>⚠️</span> ĐỪNG ĐỂ MẤT CƠ HỘI DUY NHẤT!
-                </h3>
-                <p class="text-slate-300 text-sm leading-relaxed">
-                    Nếu hoang phí kiếp sống này, tiếp tục đắm chìm trong tham-sân-si mà bỏ lỡ kỳ Đại Ân Xá, chúng sinh sẽ phải chờ tới <strong class="text-amber-300">1 ỨC VẠN KIẾP</strong> luân hồi đau khổ mới có được cơ hội lần thứ hai!
+        <!-- BỘ ĐẾM THỜI GIAN TU TẬP & THIÊN CƠ CẢNH TỈNH -->
+        <section class="bg-slate-900/80 p-6 md:p-8 rounded-2xl border border-amber-500/40 shadow-2xl space-y-6">
+            <div class="border-b border-amber-500/30 pb-3">
+                <h2 class="text-2xl font-bold gold-text text-center">
+                    ⏳ Đồng Hồ Cảnh Tỉnh Kỳ Đại Ân Xá (100 Năm)
+                </h2>
+                <p class="text-xs text-center text-slate-400 mt-1">Chu kỳ ân xá 100 năm trôi qua nhanh chóng, cơ hội giải thoát vĩnh hằng ngắn lại từng ngày</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
+                <div class="bg-slate-800/80 p-3 rounded-xl border border-amber-500/35">
+                    <div id="countdownYears" class="text-xl md:text-3xl font-extrabold text-amber-400">100</div>
+                    <div class="text-xs text-slate-400 uppercase mt-1">Năm</div>
+                </div>
+                <div class="bg-slate-800/80 p-3 rounded-xl border border-amber-500/35">
+                    <div id="countdownDays" class="text-xl md:text-3xl font-extrabold text-amber-400">000</div>
+                    <div class="text-xs text-slate-400 uppercase mt-1">Ngày</div>
+                </div>
+                <div class="bg-slate-800/80 p-3 rounded-xl border border-amber-500/35">
+                    <div id="countdownHours" class="text-xl md:text-3xl font-extrabold text-amber-400">00</div>
+                    <div class="text-xs text-slate-400 uppercase mt-1">Giờ</div>
+                </div>
+                <div class="bg-slate-800/80 p-3 rounded-xl border border-amber-500/35">
+                    <div id="countdownSeconds" class="text-xl md:text-3xl font-extrabold text-amber-400">00</div>
+                    <div class="text-xs text-slate-400 uppercase mt-1">Phút : Giây</div>
+                </div>
+            </div>
+
+            <div class="bg-amber-950/20 p-4 rounded-xl border border-amber-500/30 space-y-2">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-amber-300 font-bold text-sm flex items-center gap-2">
+                        <span>📜</span> Thiên Cơ Cảnh Tỉnh Hằng Ngày
+                    </h3>
+                    <button type="button" onclick="doiThienCo()" class="text-xs text-amber-400 hover:underline cursor-pointer">XEM CÂU KHÁC</button>
+                </div>
+                <p id="thienCoText" class="text-slate-300 text-sm italic transition-opacity duration-300">
+                    "Thân người khó được, Phật pháp khó nghe. Nay đã gặp Đại Ân Xá, chớ nên để luống qua một đời vô ích!"
                 </p>
             </div>
         </section>
 
-        <!-- FORM PHÁT TÂM SÁM HỐI -->
+        <!-- SỔ TAY CÔNG PHU HẰNG NGÀY -->
         <section class="bg-slate-900/80 p-6 md:p-8 rounded-2xl border border-amber-500/40 shadow-2xl space-y-6">
             <div class="border-b border-amber-500/30 pb-3">
                 <h2 class="text-2xl font-bold gold-text text-center">
-                    🙏 Tờ Phướn Phát Tâm Sám Hối
+                    📖 Sổ Tay Công Phu Hằng Ngày
                 </h2>
-                <p class="text-xs text-center text-slate-400 mt-1">Đón nhận ân xá nghiệp cũ – Nỗ lực tu tập trọn vẹn kiếp này</p>
+                <p class="text-xs text-center text-slate-400 mt-1">Tích lũy phút giây niệm Phật, thiền định và hành thiện</p>
             </div>
 
-            <form id="samHoiForm" onsubmit="xuLySamHoi(event)" class="space-y-5">
-                <!-- Họ và tên -->
-                <div>
-                    <label for="hoTen" class="block text-sm font-medium text-amber-200 mb-1">Họ và tên người phát tâm <span class="text-red-400">*</span></label>
-                    <input type="text" id="hoTen" required placeholder="Nhập đầy đủ họ và tên..." 
-                        class="w-full bg-slate-800/90 border border-slate-600 rounded-lg px-4 py-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400">
-                </div>
-
-                <!-- Chọn Chủ đề (10 chủ đề) -->
-                <div>
-                    <label for="chuDe" class="block text-sm font-medium text-amber-200 mb-1">Chọn chủ đề sám hối <span class="text-red-400">*</span></label>
-                    <select id="chuDe" required 
-                        class="w-full bg-slate-800/90 border border-slate-600 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400">
-                        <option value="" disabled selected>-- Chọn 1 trong 10 chủ đề --</option>
-                        <option value="Tội bất hiếu với cha mẹ, tổ tiên">1. Tội bất hiếu, ngỗ nghịch với cha mẹ, tổ tiên</option>
-                        <option value="Khẩu nghiệp, nói dối, bịa đặt, chửi rủa">2. Khẩu nghiệp (nói dối, gièm pha, xúc phạm người khác)</option>
-                        <option value="Sát sinh, hại vật, làm tổn hại sự sống">3. Sát sinh, làm tổn hại đến muôn loài</option>
-                        <option value="Tham lam, trộm cắp, chiếm đoạt tài sản">4. Tham lam, chiếm đoạt, không trung thực về tiền tài</option>
-                        <option value="Gian dối trong kinh doanh, lừa lọc">5. Gian dối trong làm ăn, bất chấp đạo đức vì lợi ích</option>
-                        <option value="Vô ơn, bội nghĩa, phản bội niềm tin">6. Vô ơn, phụ lòng người giúp đỡ, bội tín</option>
-                        <option value="Đố kỳ, ghen ghét, hãm hại người khác">7. Tâm đố kỳ, ghen ghét, mong người khác gặp họa</option>
-                        <option value="Tà dâm, không chung thủy trong tình cảm">8. Tà dâm, phá hỏng hạnh phúc gia đình/người khác</option>
-                        <option value="Hoang phí thời gian, sa đà tệ nạn">9. Mê muội, hoang phí kiếp người vào tệ nạn/lười biếng</option>
-                        <option value="Oán trời trách đất, ôm ghen ghét hận thù">10. Tâm oán hận, nuôi hận thù, không chịu buông xả</option>
-                    </select>
-                </div>
-
-                <!-- Mô tả chi tiết -->
-                <div>
-                    <label for="moTa" class="block text-sm font-medium text-amber-200 mb-1">Mô tả lỗi lầm & Lời sám hối từ tâm <span class="text-red-400">*</span></label>
-                    <textarea id="moTa" rows="4" required placeholder="Bày tỏ lỗi lầm quá khứ và lời thề nguyện tu sửa bản thân trong kiếp này..." 
-                        class="w-full bg-slate-800/90 border border-slate-600 rounded-lg px-4 py-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400"></textarea>
-                </div>
-
-                <!-- Nút gửi -->
-                <button type="submit" 
-                    class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 transform active:scale-95">
-                    Dâng Lời Sám Hối & Thề Nguyện Tu Trọn Kiếp
-                </button>
-            </form>
-        </section>
-
-        <!-- LỊCH SỬ PHÁT TÂM SÁM HỐI -->
-        <section class="bg-slate-900/60 p-6 rounded-2xl border border-amber-500/20 shadow-xl space-y-4">
-            <div class="flex justify-between items-center border-b border-amber-500/20 pb-3">
-                <h2 class="text-xl font-bold text-amber-300">
-                    📜 Lịch Sử Phát Tâm Sám Hối Cá Nhân
-                </h2>
-                <button onclick="xoaLichSu()" class="text-xs text-red-400 hover:text-red-300 underline">
-                    Xóa lịch sử
-                </button>
-            </div>
-
-            <!-- Danh sách nhật ký -->
-            <div id="danhSachLichSu" class="space-y-4 max-h-[400px] overflow-y-auto pr-2">
-                <!-- Dữ liệu được chèn qua JavaScript -->
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="text-center py-6 border-t border-amber-500/20 text-slate-500 text-sm">
-        <p>© Đại Ân Xá Cung Thiên Đình – Khai Sáng Kiếp Nhân Sinh</p>
-        <p class="text-xs mt-1 text-slate-600">Đừng bỏ lỡ hồng ân – Một kiếp tu hành, muôn đời giải thoát.</p>
-    </footer>
-
-    <!-- JavaScript Xử Lý Dữ Liệu -->
-    <script>
-        document.addEventListener('DOMContentLoaded', hienThiLichSu);
-
-        function xuLySamHoi(e) {
-            e.preventDefault();
-
-            const hoTen = document.getElementById('hoTen').value.trim();
-            const chuDe = document.getElementById('chuDe').value;
-            const moTa = document.getElementById('moTa').value.trim();
-            const thoiGian = new Date().toLocaleString('vi-VN');
-
-            if (!hoTen || !chuDe || !moTa) {
-                alert("Vui lòng điền đầy đủ thông tin!");
-                return;
-            }
-
-            const item = {
-                id: Date.now(),
-                hoTen: hoTen,
-                chuDe: chuDe,
-                moTa: moTa,
-                thoiGian: thoiGian
-            };
-
-            let lichSu = JSON.parse(localStorage.getItem('lichSuSamHoi')) || [];
-            lichSu.unshift(item);
-            localStorage.setItem('lichSuSamHoi', JSON.stringify(lichSu));
-
-            document.getElementById('samHoiForm').reset();
-            alert("🙏 Lời sám hối của bạn đã được dâng lên. Nghiệp cũ đã được tha xá, hãy cố gắng tu tập trong kiếp duy nhất này!");
-            hienThiLichSu();
-        }
-
-        function hienThiLichSu() {
-            const danhSachDiv = document.getElementById('danhSachLichSu');
-            let lichSu = JSON.parse(localStorage.getItem('lichSuSamHoi')) || [];
-
-            if (lichSu.length === 0) {
-                danhSachDiv.innerHTML = `
-                    <p class="text-center text-slate-500 italic py-4">Chưa có lời sám hối nào được ghi nhận trên thiết bị này.</p>
-                `;
-                return;
-            }
-
-            danhSachDiv.innerHTML = lichSu.map(item => `
-                <div class="bg-slate-800/70 p-4 rounded-xl border border-slate-700/80 space-y-2 text-sm">
-                    <div class="flex justify-between items-start flex-wrap gap-1">
-                        <span class="font-bold text-amber-300">👤 ${escapeHtml(item.hoTen)}</span>
-                        <span class="text-xs text-slate-400">🕒 ${item.thoiGian}</span>
+            <form id="congPhuForm" onsubmit="ghiNhanCongPhu(event)" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="loaiCongPhu" class="block text-sm font-medium text-amber-200 mb-1">Chọn Hạnh Tu Tập <span class="text-red-400">*</span></label>
+                        <select id="loaiCongPhu" required class="w-full bg-slate-800/90 border border-slate-600 rounded-lg px-4 py-2.5 text-slate-100">
+                            <option value="" disabled selected>-- Chọn hình thức --</option>
+                            <option value="niemPhat">Niệm Phật / Trì Chú</option>
+                            <option value="thienDinh">Thiền Định / Tịnh Tâm</option>
+                            <option value="hanhThien">Làm Việc Thiện</option>
+                        </select>
                     </div>
                     <div>
-                        <span class="inline-block bg-amber-950/60 text-amber-300 border border-amber-600/40 text-xs px-2.5 py-0.5 rounded-full font-medium">
-                            📌 ${escapeHtml(item.chuDe)}
-                        </span>
+                        <label for="thoiLuong" class="block text-sm font-medium text-amber-200 mb-1">Thời lượng (Phút) <span class="text-red-400">*</span></label>
+                        <input type="number" id="thoiLuong" min="1" required placeholder="Ví dụ: 30" class="w-full bg-slate-800/90 border border-slate-600 rounded-lg px-4 py-2.5 text-slate-100">
                     </div>
-                    <p class="text-slate-300 italic whitespace-pre-line bg-slate-900/50 p-3 rounded-lg border border-slate-800">
-                        "${escapeHtml(item.moTa)}"
-                    </p>
                 </div>
-            `).join('');
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold py-3 rounded-lg">
+                    Ghi Nhận Sổ Công Phu
+                </button>
+            </form>
+            <div id="danhSachCongPhu" class="space-y-2 text-sm text-slate-300"></div>
+        </section>
+    </main>
+
+    <!-- Script sửa lỗi triệt để đồng hồ đếm ngược -->
+    <script>
+        const danhSachThienCo = [
+            "\"Thân người khó được, Phật pháp khó nghe. Nay đã gặp Đại Ân Xá, chớ nên để luống qua một đời vô ích!\"",
+            "\"Mỗi phút giây trôi qua là một bước tiến gần hơn về cõi chết. Hãy tinh tấn niệm Phật, chuyển hóa nghiệp chướng ngay hôm nay.\"",
+            "\"Đức Ngọc Đế từ bi mở hội ân xá, người biết tỉnh ngộ tu hành sẽ thoát khỏi luân hồi đau khổ muôn kiếp.\""
+        ];
+        let indexThienCo = 0;
+
+        function doiThienCo() {
+            indexThienCo = (indexThienCo + 1) % danhSachThienCo.length;
+            const el = document.getElementById('thienCoText');
+            if (el) el.innerText = danhSachThienCo[indexThienCo];
         }
 
-        function xoaLichSu() {
-            if (confirm("Bạn có chắc chắn muốn xóa toàn bộ lịch sử sám hối trên máy này?")) {
-                localStorage.removeItem('lichSuSamHoi');
-                hienThiLichSu();
+        // Đặt cứng thời điểm kết thúc 100 năm tính từ thời điểm hiện tại (tránh lỗi localStorage trên Acode)
+        const targetTime = new Date().getTime() + (100 * 365.25 * 24 * 60 * 60 * 1000);
+
+        function capNhatCountdown() {
+            const now = new Date().getTime();
+            const distance = targetTime - now;
+
+            if (distance > 0) {
+                const totalDays = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const years = Math.floor(totalDays / 365);
+                const days = totalDays % 365;
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                const elY = document.getElementById('countdownYears');
+                const elD = document.getElementById('countdownDays');
+                const elH = document.getElementById('countdownHours');
+                const elS = document.getElementById('countdownSeconds');
+
+                if (elY) elY.innerText = String(years).padStart(2, '0');
+                if (elD) elD.innerText = String(days).padStart(3, '0');
+                if (elH) elH.innerText = String(hours).padStart(2, '0');
+                if (elS) elS.innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
             }
         }
 
-        function escapeHtml(text) {
-            return text
-                .replace(/&/g, "&amp;")
-                .replace(/</g, "&lt;")
-                .replace(/>/g, "&gt;")
-                .replace(/"/g, "&quot;")
-                .replace(/'/g, "&#039;");
+        function ghiNhanCongPhu(e) {
+            e.preventDefault();
+            alert("🙏 Đã ghi nhận công phu thành công!");
         }
+
+        // Chạy ngay lập tức khi tải trang
+        setInterval(capNhatCountdown, 1000);
+        capNhatCountdown();
     </script>
 </body>
 </html>
