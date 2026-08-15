@@ -1,21 +1,34 @@
-# Đại Ân Xá Của Đức Ngọc Đế — Nhất Kiếp Thành Đạo
+# 📜 Đại Ân Xá Của Đức Ngọc Đế | Sổ Nam Tào - Bắc Đẩu
 
-Trang web ứng dụng tâm linh cảnh tỉnh và hỗ trợ tu tập trong **Kỳ Đại Ân Xá 100 Năm** của Đức Ngọc Đế.
+> Ứng dụng web tâm linh nhắc nhở tu tập, tích lũy công đức và sám hối nghiệp chướng trong thời kỳ Đại Ân Xá. Được thiết kế tối ưu hóa hoàn toàn cho các trình soạn thảo mã nguồn di động như **Acode** và **TrebEdit**.
 
-## 🌟 Tính Năng Nổi Bật
+---
 
-* **⏳ Đồng Hồ Cảnh Tỉnh Kỳ Đại Ân Xá:** Bộ đếm ngược thời gian thực (Năm, Ngày, Giờ, Phút, Giây) nhắc nhở sự vô thường và quý giá của cơ hội giải thoát trong kiếp này.
-* **📜 Thiên Cơ Cảnh Tỉnh Hằng Ngày:** Tính năng thay đổi lời kinh, câu nhắc nhở thiên cơ để giữ tâm hướng thiện.
-* **📖 Sổ Tay Công Phu Hằng Ngày:** Ghi nhận và thống kê thời gian niệm Phật, thiền định, hành thiện tích đức kèm lưu trữ lịch sử cá nhân (`localStorage`).
-* **🙏 Tờ Phướn Phát Tâm Sám Hối:** Biểu mẫu phát tâm sám hối các lỗi lầm quá khứ và thề nguyện tu sửa trọn đời.
+## ✨ Tính Năng Nổi Bật
+
+- **⏳ Đồng Hồ Đếm Ngược 100 Năm:** Lưu trữ mốc thời gian bằng `localStorage`, đảm bảo đồng hồ chạy liên tục, không bị reset hay mất nhịp khi tải lại trang hoặc đóng/mở ứng dụng trên điện thoại.
+- **📜 Sổ Nam Tào - Bắc Đẩu:** Tự động ghi chép, phân loại và lưu trữ các việc làm thiện (Tích Lũy Công Đức) và sám hối nghiệp chướng của trần gian, hiển thị trạng thái phê duyệt trực quan.
+- **🔊 Giọng Đọc Thiên Cơ (Text-to-Speech):** Tích hợp công nghệ đọc văn bản tự động bằng giọng tiếng Việt, phát âm các thông điệp cảnh tỉnh và thông báo ghi sổ từ Thiên Đình.
+- **📱 Thân Thiện Với Mobile IDE:** Xây dựng bằng HTML/JS thuần kết hợp Tailwind CSS qua CDN, hoạt động mượt mà, không cần cấu hình phức tạp trên Acode hoặc TrebEdit.
+
+---
+
+## 🚀 Hướng Dẫn Cài Đặt & Sử Dụng Trên Acode / TrebEdit
+
+1. Mở ứng dụng **Acode** hoặc **TrebEdit** trên thiết bị Android của bạn.
+2. Tạo một tệp mới có tên `index.html`.
+3. Dán toàn bộ mã nguồn của ứng dụng vào tệp.
+4. Lưu tệp lại và chọn chạy (Preview / Open in Browser) để trải nghiệm ứng dụng ngay lập tức.
+
+---
 
 ## 🛠️ Công Nghệ Sử Dụng
 
-* **HTML5 / CSS3 / JavaScript (ES6)**
-* **Tailwind CSS** (Giao diện hiện đại, tối ưu cho cả di động và máy tính)
+- **HTML5 & CSS (Tailwind CSS CDN):** Tạo giao diện hiện đại, tông màu tối trang nghiêm, hiển thị hoàn hảo trên mọi kích thước màn hình điện thoại.
+- **Vanilla JavaScript:** Xử lý logic đếm ngược thời gian, quản lý danh sách bằng `localStorage` và tích hợp API `SpeechSynthesis` để đọc văn bản trực tiếp từ trình duyệt.
 
-## 🚀 Hướng Dẫn Sử Dụng
+---
 
-1. Tải hoặc sao chép mã nguồn vào file **`index.html`**.
-2. Mở file trực tiếp bằng trình duyệt web hiện đại (Google Chrome, Safari, v.v.).
-3. Trải nghiệm các tính năng đếm ngược, ghi sổ công phu và phát tâm sám hối ngay trên thiết bị của bạn.
+## 📄 Bản Quyền & Chia Sẻ
+
+Dự án phục vụ mục đích hoằng pháp và tu tập cá nhân. Bạn có thể tự do sao chép, tùy biến và chia sẻ cho người thân, bạn bè cùng tinh tấn tu hành trong thời kỳ mạt pháp.
