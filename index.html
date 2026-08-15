@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đại Ân Xá Của Đức Ngọc Đế | Nhất Kiếp Thành Đạo</title>
+    <title>Đại Ân Xá Của Đức Ngọc Đế | Sổ Nam Tào - Bắc Đẩu</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -19,175 +19,199 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between">
+<body class="min-h-screen flex flex-col justify-between p-4 md:p-8">
 
-    <!-- Header / Banner -->
-    <header class="text-center py-10 px-4 border-b border-amber-500/30">
-        <div class="max-w-4xl mx-auto space-y-3">
-            <p class="text-amber-400 font-semibold tracking-widest uppercase text-xs md:text-sm">Sắc Trực Từ Thiên Đình — Kỳ Đại Ân Xá</p>
-            <h1 class="text-3xl md:text-5xl font-extrabold gold-text tracking-wide leading-tight">
-                ĐẠI ÂN XÁ CỦA ĐỨC NGỌC ĐẾ
+    <div class="max-w-3xl mx-auto space-y-8 w-full">
+        
+        <!-- Header -->
+        <header class="text-center space-y-2 border-b border-amber-500/30 pb-6">
+            <p class="text-amber-400 font-semibold tracking-widest uppercase text-xs">Thiên Đình Kỷ Lục — Kỳ Đại Ân Xá</p>
+            <h1 class="text-3xl md:text-4xl font-extrabold gold-text tracking-wide">
+                ĐẠI ÂN XÁ CỨU ĐỘ
             </h1>
-            <p class="text-sm md:text-lg text-slate-300 italic">
-                "Cơ Hội Tu Một Kiếp Thành Phật - Thánh - Tiên"
-            </p>
-        </div>
-    </header>
+        </header>
 
-    <!-- Nội dung chính -->
-    <main class="max-w-4xl mx-auto px-4 py-8 space-y-10">
-
-        <!-- THIÊN CƠ VỀ ĐẠI ÂN XÁ KHAI SÁNG -->
-        <section class="bg-gradient-to-br from-amber-950/40 via-slate-900/80 to-slate-900/80 p-6 md:p-8 rounded-2xl border border-amber-500/40 shadow-2xl space-y-6">
-            <h2 class="text-2xl font-bold text-amber-300 border-b border-amber-500/30 pb-3 text-center uppercase tracking-wide">
-                ⚡ Cảnh Tỉnh Thiên Cơ & Hồng Ân Trời Ban
-            </h2>
-
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-slate-800/60 p-5 rounded-xl border border-slate-700 space-y-2">
-                    <div class="text-amber-400 font-bold text-lg border-b border-slate-700 pb-1">
-                        ⏳ Ngày Xưa (Thuở Trước)
-                    </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">
-                        Chúng sinh phải trải qua **1 vạn kiếp** đầu thai lên xuống, chịu muôn vàn đắng cay, tích lũy công đức qua trăm ngàn đời mới đủ duyên để thành **Phật, Thánh, Tiên**.
-                    </p>
-                </div>
-
-                <div class="bg-amber-950/30 p-5 rounded-xl border border-amber-500/40 space-y-2">
-                    <div class="text-amber-300 font-bold text-lg border-b border-amber-500/30 pb-1">
-                        ✨ Kiếp Hiện Tại (Đại Ân Xá)
-                    </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">
-                        Đức Ngọc Đế ban hồng ân **miễn xá toàn bộ tội lỗi từ nhiều kiếp trước**. Chỉ cần **TU MỘT KIẾP NÀY** là có cơ hội đắc quả vị **Phật, Thánh, Tiên**.
-                    </p>
-                </div>
+        <!-- ĐỒNG HỒ ĐẾM NGƯỢC 100 NĂM (Lưu localStorage) -->
+        <section class="bg-slate-900/90 p-6 rounded-2xl border border-amber-500/40 shadow-xl space-y-4">
+            <h2 class="text-lg font-bold gold-text text-center">⏳ Đồng Hồ Ân Xá (100 Năm)</h2>
+            <div class="grid grid-cols-4 gap-2 text-center text-amber-400 font-mono text-lg md:text-xl">
+                <div class="bg-slate-800 p-2 rounded-xl border border-amber-500/30"><span id="y">00</span><br><small class="text-[10px] text-slate-400">NĂM</small></div>
+                <div class="bg-slate-800 p-2 rounded-xl border border-amber-500/30"><span id="d">000</span><br><small class="text-[10px] text-slate-400">NGÀY</small></div>
+                <div class="bg-slate-800 p-2 rounded-xl border border-amber-500/30"><span id="h">00</span><br><small class="text-[10px] text-slate-400">GIỜ</small></div>
+                <div class="bg-slate-800 p-2 rounded-xl border border-amber-500/30"><span id="m">00</span><br><small class="text-[10px] text-slate-400">P : G</small></div>
             </div>
         </section>
 
-        <!-- BỘ ĐẾM THỜI GIAN TU TẬP & THIÊN CƠ CẢNH TỈNH -->
-        <section class="bg-slate-900/80 p-6 md:p-8 rounded-2xl border border-amber-500/40 shadow-2xl space-y-6">
-            <div class="border-b border-amber-500/30 pb-3">
-                <h2 class="text-2xl font-bold gold-text text-center">
-                    ⏳ Đồng Hồ Cảnh Tỉnh Kỳ Đại Ân Xá (100 Năm)
-                </h2>
-                <p class="text-xs text-center text-slate-400 mt-1">Chu kỳ ân xá 100 năm trôi qua nhanh chóng, cơ hội giải thoát vĩnh hằng ngắn lại từng ngày</p>
+        <!-- THIÊN CƠ, SO SÁNH, LỜI NHỦ & GIỌNG ĐỌC -->
+        <section class="bg-slate-900/90 p-6 rounded-2xl border border-amber-500/40 shadow-xl space-y-6">
+            <div class="flex items-center justify-between border-b border-amber-500/30 pb-3">
+                <h2 class="text-lg font-bold gold-text uppercase">⚡ Thiên Cơ Cảnh Tỉnh & Lời Nhủ Cuối</h2>
+                <button onclick="docThienCo()" class="bg-amber-500/20 hover:bg-amber-500/40 text-amber-300 border border-amber-500/50 px-3 py-1 rounded-lg text-xs flex items-center gap-1 transition">
+                    🔊 Nghe Đọc Văn Bản
+                </button>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
-                <div class="bg-slate-800/80 p-3 rounded-xl border border-amber-500/35">
-                    <div id="countdownYears" class="text-xl md:text-3xl font-extrabold text-amber-400">100</div>
-                    <div class="text-xs text-slate-400 uppercase mt-1">Năm</div>
-                </div>
-                <div class="bg-slate-800/80 p-3 rounded-xl border border-amber-500/35">
-                    <div id="countdownDays" class="text-xl md:text-3xl font-extrabold text-amber-400">000</div>
-                    <div class="text-xs text-slate-400 uppercase mt-1">Ngày</div>
-                </div>
-                <div class="bg-slate-800/80 p-3 rounded-xl border border-amber-500/35">
-                    <div id="countdownHours" class="text-xl md:text-3xl font-extrabold text-amber-400">00</div>
-                    <div class="text-xs text-slate-400 uppercase mt-1">Giờ</div>
-                </div>
-                <div class="bg-slate-800/80 p-3 rounded-xl border border-amber-500/35">
-                    <div id="countdownSeconds" class="text-xl md:text-3xl font-extrabold text-amber-400">00</div>
-                    <div class="text-xs text-slate-400 uppercase mt-1">Phút : Giây</div>
-                </div>
-            </div>
-
-            <div class="bg-amber-950/20 p-4 rounded-xl border border-amber-500/30 space-y-2">
-                <div class="flex items-center justify-between">
-                    <h3 class="text-amber-300 font-bold text-sm flex items-center gap-2">
-                        <span>📜</span> Thiên Cơ Cảnh Tỉnh Hằng Ngày
-                    </h3>
-                    <button type="button" onclick="doiThienCo()" class="text-xs text-amber-400 hover:underline cursor-pointer">XEM CÂU KHÁC</button>
-                </div>
-                <p id="thienCoText" class="text-slate-300 text-sm italic transition-opacity duration-300">
-                    "Thân người khó được, Phật pháp khó nghe. Nay đã gặp Đại Ân Xá, chớ nên để luống qua một đời vô ích!"
-                </p>
-            </div>
-        </section>
-
-        <!-- SỔ TAY CÔNG PHU HẰNG NGÀY -->
-        <section class="bg-slate-900/80 p-6 md:p-8 rounded-2xl border border-amber-500/40 shadow-2xl space-y-6">
-            <div class="border-b border-amber-500/30 pb-3">
-                <h2 class="text-2xl font-bold gold-text text-center">
-                    📖 Sổ Tay Công Phu Hằng Ngày
-                </h2>
-                <p class="text-xs text-center text-slate-400 mt-1">Tích lũy phút giây niệm Phật, thiền định và hành thiện</p>
-            </div>
-
-            <form id="congPhuForm" onsubmit="ghiNhanCongPhu(event)" class="space-y-4">
+            <div id="noiDungThienCo" class="space-y-4 text-sm text-slate-300 leading-relaxed">
+                <!-- Ngày Xưa vs Kiếp Hiện Tại -->
                 <div class="grid md:grid-cols-2 gap-4">
-                    <div>
-                        <label for="loaiCongPhu" class="block text-sm font-medium text-amber-200 mb-1">Chọn Hạnh Tu Tập <span class="text-red-400">*</span></label>
-                        <select id="loaiCongPhu" required class="w-full bg-slate-800/90 border border-slate-600 rounded-lg px-4 py-2.5 text-slate-100">
-                            <option value="" disabled selected>-- Chọn hình thức --</option>
-                            <option value="niemPhat">Niệm Phật / Trì Chú</option>
-                            <option value="thienDinh">Thiền Định / Tịnh Tâm</option>
-                            <option value="hanhThien">Làm Việc Thiện</option>
-                        </select>
+                    <div class="bg-slate-800/70 p-4 rounded-xl border border-slate-700 space-y-2">
+                        <div class="text-amber-400 font-bold border-b border-slate-700 pb-1">⏳ Ngày Xưa (Thuở Trước)</div>
+                        <p>Chúng sinh phải trải qua <strong class="text-white">1 vạn kiếp</strong> đầu thai lên xuống, chịu muôn vàn đắng cay, tích lũy công đức qua trăm ngàn đời mới đủ duyên để thành <strong class="text-amber-300">Phật, Thánh, Tiên</strong>.</p>
                     </div>
-                    <div>
-                        <label for="thoiLuong" class="block text-sm font-medium text-amber-200 mb-1">Thời lượng (Phút) <span class="text-red-400">*</span></label>
-                        <input type="number" id="thoiLuong" min="1" required placeholder="Ví dụ: 30" class="w-full bg-slate-800/90 border border-slate-600 rounded-lg px-4 py-2.5 text-slate-100">
+                    <div class="bg-amber-950/30 p-4 rounded-xl border border-amber-500/40 space-y-2">
+                        <div class="text-amber-300 font-bold border-b border-amber-500/30 pb-1">✨ Kiếp Hiện Tại (Đại Ân Xá)</div>
+                        <p>Đức Ngọc Đế ban hồng ân <strong class="text-white">miễn xá toàn bộ tội lỗi từ nhiều kiếp trước</strong>. Chỉ cần <strong class="text-amber-300">TU MỘT KIẾP NÀY</strong> là có cơ hội đắc quả vị <strong class="text-amber-300">Phật, Thánh, Tiên</strong>.</p>
                     </div>
                 </div>
-                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold py-3 rounded-lg">
-                    Ghi Nhận Sổ Công Phu
+
+                <!-- Lời cảnh tỉnh 1 ức kiếp -->
+                <div class="bg-amber-950/20 p-4 rounded-xl border border-amber-500/30 space-y-2">
+                    <div class="text-amber-400 font-bold flex items-center gap-2">
+                        <span>⚠️</span> Lời Cảnh Tỉnh Tối Hậu
+                    </div>
+                    <p>Nếu không biết tu hành thì phải đợi <strong class="text-red-400">1 ức kiếp</strong> nữa mới có cơ hội, hên xui mai rủi chỉ có đầu thai làm người mới tu được!</p>
+                </div>
+
+                <!-- Lời nhắn nhủ thời mạt pháp mới thêm -->
+                <div class="bg-gradient-to-r from-amber-950/40 via-slate-900 to-slate-900 p-4 rounded-xl border border-amber-500/50 space-y-2">
+                    <div class="text-amber-300 font-bold flex items-center gap-2">
+                        <span>🚨</span> Thông Điệp Kỳ Hạn & Thời Kỳ Mạt Pháp
+                    </div>
+                    <p>
+                        Kết thúc 100 năm ân xá, việc tu hành chẳng còn dễ như xưa. Nên là các cô dì chú bác phải cố gắng để về được làm <strong class="text-amber-400">Phật, Thánh, Tiên</strong>.
+                    </p>
+                    <p>
+                        Và sau khi kết thúc sẽ bước vào thời kỳ mạt pháp, nên là phải truyền tay nhau nhắc nhở các con cháu đời sau gắng mau mau tu gấp để về với các ngài. Bây giờ thời cuộc rất là gấp rồi, nên cô bác ráng cố gắng nhé!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SỔ NAM TÀO - BẮC ĐẨU (Tự động ghi chép & Phán xét) -->
+        <section class="bg-slate-900/90 p-6 rounded-2xl border border-amber-500/40 shadow-xl space-y-4">
+            <div class="border-b border-amber-500/30 pb-2 text-center">
+                <h2 class="text-xl font-bold gold-text">📜 Sổ Nam Tào - Bắc Đẩu</h2>
+                <p class="text-xs text-slate-400">Tự động ghi chép công đức và sám hối trần gian</p>
+            </div>
+
+            <form id="formNamTao" class="space-y-3">
+                <div class="grid md:grid-cols-2 gap-3">
+                    <select id="loaiGhiChep" class="w-full bg-slate-800 border border-slate-600 rounded-lg p-2.5 text-sm text-slate-100">
+                        <option value="Công Đức">🌟 Tích Lũy Công Đức (Thiện)</option>
+                        <option value="Sám Hối">🙏 Sám Hối Nghiệp Chướng (Trừ tội)</option>
+                    </select>
+                    <input type="text" id="noiDung" placeholder="Việc làm (Ví dụ: Niệm Phật 1h, giúp người...)" required class="w-full bg-slate-800 border border-slate-600 rounded-lg p-2.5 text-sm text-slate-100">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold py-2.5 rounded-lg text-sm shadow-lg hover:opacity-90 transition">
+                    Gửi Lên Nam Tào - Bắc Đẩu Ghi Sổ
                 </button>
             </form>
-            <div id="danhSachCongPhu" class="space-y-2 text-sm text-slate-300"></div>
+
+            <div class="space-y-2 pt-2">
+                <div class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Danh Sách Đã Ghi Nhận Tại Thiên Đình:</div>
+                <ul id="danhSachNamTao" class="space-y-2 max-h-48 overflow-y-auto text-sm text-slate-300"></ul>
+            </div>
         </section>
-    </main>
 
-    <!-- Script sửa lỗi triệt để đồng hồ đếm ngược -->
+    </div>
+
     <script>
-        const danhSachThienCo = [
-            "\"Thân người khó được, Phật pháp khó nghe. Nay đã gặp Đại Ân Xá, chớ nên để luống qua một đời vô ích!\"",
-            "\"Mỗi phút giây trôi qua là một bước tiến gần hơn về cõi chết. Hãy tinh tấn niệm Phật, chuyển hóa nghiệp chướng ngay hôm nay.\"",
-            "\"Đức Ngọc Đế từ bi mở hội ân xá, người biết tỉnh ngộ tu hành sẽ thoát khỏi luân hồi đau khổ muôn kiếp.\""
-        ];
-        let indexThienCo = 0;
-
-        function doiThienCo() {
-            indexThienCo = (indexThienCo + 1) % danhSachThienCo.length;
-            const el = document.getElementById('thienCoText');
-            if (el) el.innerText = danhSachThienCo[indexThienCo];
+        // 1. ĐỒNG HỒ ĐẾM NGƯỢC 100 NĂM (Lưu localStorage)
+        const TIME_KEY = 'ngocDe_100y';
+        function getEndTime() {
+            let t = localStorage.getItem(TIME_KEY);
+            if (!t) {
+                t = new Date().getTime() + (100 * 365.25 * 24 * 60 * 60 * 1000);
+                localStorage.setItem(TIME_KEY, t);
+            }
+            return parseInt(t);
         }
 
-        // Đặt cứng thời điểm kết thúc 100 năm tính từ thời điểm hiện tại (tránh lỗi localStorage trên Acode)
-        const targetTime = new Date().getTime() + (100 * 365.25 * 24 * 60 * 60 * 1000);
-
-        function capNhatCountdown() {
-            const now = new Date().getTime();
-            const distance = targetTime - now;
-
+        function updateCountdown() {
+            const distance = getEndTime() - new Date().getTime();
             if (distance > 0) {
                 const totalDays = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const years = Math.floor(totalDays / 365);
-                const days = totalDays % 365;
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                const y = Math.floor(totalDays / 365);
+                const d = totalDays % 365;
+                const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((distance % (1000 * 60)) / 1000);
 
-                const elY = document.getElementById('countdownYears');
-                const elD = document.getElementById('countdownDays');
-                const elH = document.getElementById('countdownHours');
-                const elS = document.getElementById('countdownSeconds');
+                document.getElementById('y').innerText = y;
+                document.getElementById('d').innerText = String(d).padStart(3, '0');
+                document.getElementById('h').innerText = String(h).padStart(2, '0');
+                document.getElementById('m').innerText = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+            }
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
 
-                if (elY) elY.innerText = String(years).padStart(2, '0');
-                if (elD) elD.innerText = String(days).padStart(3, '0');
-                if (elH) elH.innerText = String(hours).padStart(2, '0');
-                if (elS) elS.innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        // 2. TÍNH NĂNG GIỌNG ĐỌC VĂN BẢN (Text-to-Speech)
+        function docThienCo() {
+            const textElement = document.getElementById('noiDungThienCo');
+            if (textElement && 'speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(textElement.innerText);
+                utterance.lang = 'vi-VN';
+                utterance.rate = 0.95;
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert("Trình duyệt không hỗ trợ giọng đọc văn bản.");
             }
         }
 
-        function ghiNhanCongPhu(e) {
-            e.preventDefault();
-            alert("🙏 Đã ghi nhận công phu thành công!");
+        // 3. SỔ NAM TÀO - BẮC ĐẨU (Lưu trữ localStorage & Tự động phản hồi)
+        const LEDGER_KEY = 'so_nam_tao_bac_dau';
+
+        function renderLedger() {
+            const data = JSON.parse(localStorage.getItem(LEDGER_KEY) || '[]');
+            const ul = document.getElementById('danhSachNamTao');
+            
+            if (data.length === 0) {
+                ul.innerHTML = '<li class="text-slate-500 italic text-xs text-center py-2">Sổ thiên đình chưa có bản ghi nào hôm nay.</li>';
+                return;
+            }
+
+            ul.innerHTML = data.map((item, index) => `
+                <li class="bg-slate-800/80 p-3 rounded-lg border border-slate-700 flex justify-between items-center text-xs">
+                    <div>
+                        <span class="font-bold ${item.loai === 'Công Đức' ? 'text-amber-400' : 'text-emerald-400'}">[${item.loai}]</span> 
+                        <span class="text-slate-200 ml-1">${item.noiDung}</span>
+                        <div class="text-[10px] text-slate-400 mt-0.5">${item.ngay} - <span class="text-amber-300">Nam Tào Bắc Đẩu đã phê duyệt ✅</span></div>
+                    </div>
+                    <button onclick="xoaMucGhi(${index})" class="text-red-400 hover:text-red-300 px-2 py-1">✕</button>
+                </li>
+            `).join('');
         }
 
-        // Chạy ngay lập tức khi tải trang
-        setInterval(capNhatCountdown, 1000);
-        capNhatCountdown();
+        document.getElementById('formNamTao').onsubmit = (e) => {
+            e.preventDefault();
+            const loai = document.getElementById('loaiGhiChep').value;
+            const noiDung = document.getElementById('noiDung').value;
+            const now = new Date().toLocaleString('vi-VN');
+
+            const data = JSON.parse(localStorage.getItem(LEDGER_KEY) || '[]');
+            data.unshift({ loai, noiDung, ngay: now });
+            localStorage.setItem(LEDGER_KEY, JSON.stringify(data));
+
+            renderLedger();
+            document.getElementById('noiDung').value = '';
+            
+            if ('speechSynthesis' in window) {
+                const u = new SpeechSynthesisUtterance("Nam Tào Bắc Đẩu đã ghi vào sổ.");
+                u.lang = 'vi-VN';
+                window.speechSynthesis.speak(u);
+            }
+        };
+
+        function xoaMucGhi(index) {
+            const data = JSON.parse(localStorage.getItem(LEDGER_KEY) || '[]');
+            data.splice(index, 1);
+            localStorage.setItem(LEDGER_KEY, JSON.stringify(data));
+            renderLedger();
+        }
+
+        renderLedger();
     </script>
 </body>
 </html>
