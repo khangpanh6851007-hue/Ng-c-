@@ -1,42 +1,42 @@
-name: Deploy Static HTML to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Hoặc "master" tùy thuộc vào tên nhánh chính của bạn
-
-  # Cho phép chạy thủ công từ tab Actions trên GitHub
+    branches:
+      - main
   workflow_dispatch:
 
-# Thiết lập quyền hạn cần thiết cho GITHUB_TOKEN
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Đảm bảo chỉ có một tiến trình deploy chạy cùng một lúc
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: github-pages
+  cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          # Thư mục chứa tệp index.html (đặt ở thư mục gốc của repo)
-          path: '.'
+          path: .
 
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
